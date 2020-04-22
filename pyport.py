@@ -9,8 +9,8 @@ def pyport():
     subprocess.call('clear', shell=True)
 
     # Ask for input from the user
-#    remoteServer = input("Enter a remote host to scan: ")
-    remoteServerIP = socket.gethostbyname("192.168.1.199")
+    remoteServer = input("Enter a remote host to scan: ")
+    remoteServerIP = socket.gethostbyname(remoteServer)
 
     # Print banner with information on host
     print("-"*120)
